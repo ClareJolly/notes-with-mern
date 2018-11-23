@@ -29,15 +29,15 @@ return expect(driver.findElement(By.tagName("body")).getText()).to.eventually.co
   });
 });
 
-describe('Read notes', done => {
+describe('Read notes api', done => {
   before(done => {
     console.log('Go to page');
-    driver.get('http://localhost:5001')
+    driver.get('http://localhost:5001/api/getnotes')
     done()
   })
 
-  // it('read back notes', () => {
-  // console.log('Checks first note is correct');
-  // return expect(driver.findElement(By.xpath("//ul/li[contains(concat(' ', @class, ' '), ' quote ')][first()]")).getText()).to.eventually.contain("this is a new note");
-  // });
+  it('read back notes', () => {
+  console.log('Checks first note is correct');
+  return expect(driver.findElement(By.tagName("body")).getText()).to.eventually.contain("this is a new note");
+  });
 })

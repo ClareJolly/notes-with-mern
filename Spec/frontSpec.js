@@ -30,8 +30,8 @@ describe('Read notes', done => {
     done()
   })
 
-  // it('read back notes', () => {
-  // console.log('Checks first note is correct');
-  // return expect(driver.findElement(By.xpath("//ul/li[contains(concat(' ', @class, ' '), ' note ')][1]")).getText()).to.eventually.contain("this is a new note");
-  // });
+  it('read back notes', () => {
+  console.log('Checks first note is correct');
+  return expect(driver.findElement(By.xpath("//ul/li[contains(concat(' ', @class, ' '), ' note ')][1]")).getText()).to.eventually.contain("this is a new note");
+  });
 })

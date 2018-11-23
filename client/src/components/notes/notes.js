@@ -6,6 +6,8 @@ class Notes extends Component {
     return (
       <div >
       <h1>NodeNotes</h1>
+      <ul class="notes">
+      <li class="note">this is a new note</li></ul>
       </div>
     );
   }

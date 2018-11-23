@@ -66,3 +66,9 @@ Create an app called client
 
 after scripts add so you don't need to reference the full path
 `"proxy":"http://localhost:5001"` -->
+
+## Adding the database
+
+`npm i mongodb`
+
+require mongo db in your backend `server.js`
