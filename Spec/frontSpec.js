@@ -27,11 +27,20 @@ describe('Read notes', done => {
   before(done => {
     console.log('Go to page');
     driver.get('http://localhost:3000')
-    done()
+    driver.then(() => {
+      driver.wait(until.elementLocated(By.css('.notes'))).then(() => {
+        done();
+      });
+      });
   })
 
   it('read back notes', () => {
   console.log('Checks first note is correct');
   return expect(driver.findElement(By.xpath("//ul/li[contains(concat(' ', @class, ' '), ' note ')][1]")).getText()).to.eventually.contain("this is a new note");
   });
+
+  // it('read back notes', () => {
+  // console.log('Checks first note is correct');
+  // return expect(driver.findElement(By.xpath("//ul/li[contains(concat(' ', @class, ' '), ' note-r ')][1]")).getText()).to.eventually.contain("this is a new note");
+  // });
 })
