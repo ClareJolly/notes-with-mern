@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test:e2e": "mocha --timeout 20000 Spec/tests.js",
+    "test:front": "mocha --timeout 20000 Spec/frontSpec.js",
     "server": "nodemon server.js"
   },
   "repository": {

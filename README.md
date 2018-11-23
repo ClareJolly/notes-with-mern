@@ -62,7 +62,7 @@ Install the create react app package globally
 Create an app called client
 `create-react-app client`
 
-in client folder, open `package.json`
+<!-- in client folder, open `package.json`
 
 after scripts add so you don't need to reference the full path
-`"proxy":"http://localhost:5001"`
+`"proxy":"http://localhost:5001"` -->
