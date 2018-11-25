@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import fetch from 'isomorphic-fetch'
 import './notes.css';
 
 class Notes extends Component {
