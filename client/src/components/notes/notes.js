@@ -13,7 +13,7 @@ class Notes extends Component {
 
   componentDidMount(){
     // fetch('/api/customers')
-      fetch('http://localhost:5001/api/getnotes')
+      fetch('http://localhost:5002/api/getnotes')
       // .then(console.log(res))
       // console.log(res.json())
       .then(res => res.json())
