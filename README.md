@@ -72,3 +72,23 @@ after scripts add so you don't need to reference the full path
 `npm i mongodb`
 
 require mongo db in your backend `server.js`
+
+## Adding the test framework - Jest and Enzyme
+
+### Dev dependencies
+
+"babel-cli": "^6.26.0",
+"babel-core": "^6.26.3",
+"babel-jest": "^23.6.0",
+"babel-preset-es2015": "^6.24.1",
+"babel-preset-react": "^6.24.1",
+"enzyme": "^3.7.0",
+"enzyme-adapter-react-16": "^1.7.0",
+"isomorphic-fetch": "^2.2.1",
+"jest": "^23.6.0",
+"regenerator-runtime": "^0.13.1",
+
+### Dependencies
+
+"react": "^16.6.3",
+"react-dom": "^16.6.3"
